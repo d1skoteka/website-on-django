@@ -37,5 +37,3 @@ class Post(models.Model):
 
     author = models.ForeignKey(Profile, on_delete=models.PROTECT)
     tags = models.ManyToManyField(Tag, blank=True)
-
-
